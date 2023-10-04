@@ -1,7 +1,7 @@
-"use client"
 import React from 'react'
 import Image from 'next/image'
-const NewArrival = () => {
+
+const TopSellersProduct = () => {
     const product = [
         {
             name: "Product Name",
@@ -23,37 +23,18 @@ const NewArrival = () => {
             price: "$40",
             img: "4.png"
         },
-        {
-            name: "Product Name",
-            price: "$10",
-            img: "5.png"
-        },
-        {
-            name: "Product Name",
-            price: "$20",
-            img: "6.png"
-        },
-        {
-            name: "Product Name",
-            price: "$30",
-            img: "7.png"
-        },
-        {
-            name: "Product Name",
-            price: "$40",
-            img: "4.png"
-        },
+        
     ]
-    return (
-        <div className='new-arrival container'>
+  return (
+    <div className='new-arrival container'>
             <div className='py-8 px-10'>
                 <div className='heading text-center'>
-                    <h1 className='text-2xl font-extrabold'>Discover New Arrivals</h1>
-                    <p className=' text-slate-500'>Recently added shirts!</p>
+                    <h1 className='text-2xl font-extrabold'>Top Sellers</h1>
+                    <p className=' text-slate-500'>Browse Uor Top Selling Products</p>
                 </div>
                 <div className='product-box mt-10 flex flex-wrap justify-around gap-3'>
                     {product.map((item: any, ind: any) => (
-                        <div key={ind} className='product-card text-center my-3'>
+                        <div key={ind} className='product-card text-center'>
                             <div className='product-img-box w-60'>
                                 <Image src={`/images/${item.img}`}
                                     alt={item.name}
@@ -69,9 +50,12 @@ const NewArrival = () => {
                         </div>
                     ))}
                 </div>
+                <div className=' text-center my-8'>
+                    <button className=' bg-blue-900 text-white  w-32 h-10 '>Shop Now</button>
+                </div>
             </div>
         </div>
-    )
+  )
 }
 
-export default NewArrival
+export default TopSellersProduct

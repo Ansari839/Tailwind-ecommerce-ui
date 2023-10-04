@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductOffer = () => {
   return (
-    <div className='product-offer container'>
+    <div className='product-offer container my-10'>
       <div className='flex flex-wrap justify-around px-12'>
         <div className=' w-7/12 bg-black text-white text-center h-full '>
           <div className='content-1 my-24'>

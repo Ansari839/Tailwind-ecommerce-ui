@@ -3,6 +3,7 @@ import Banner from './components/Banner'
 import NewArrival from './components/NewArrival'
 import Feature from './components/Feature'
 import ProductOffer from './components/ProductOffer'
+import TopSellersProduct from './components/TopSellersProduct'
 export default function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Home() {
     <NewArrival />
     <Feature />
     <ProductOffer />
+    <TopSellersProduct />
     </>
       )
 }
